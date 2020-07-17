@@ -1,0 +1,109 @@
+//Ques2.Explain with examples the remaining methods of String and Array
+
+A]. String functions
+
+1.String Length
+The length property returns the length of a string:
+Example
+var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var sln = txt.length;
+
+2.Finding a String in a String
+The indexOf() method returns the index of (the position of) the first occurrence of a specified text in a string:
+Example
+var str = "Please locate where 'locate' occurs!";
+var pos = str.indexOf("locate");
+
+3.The lastIndexOf() 
+method returns the index of the last occurrence of a specified text in a string:
+Example
+var str = "Please locate where 'locate' occurs!";
+var pos = str.lastIndexOf("locate");
+Both indexOf(), and lastIndexOf() return -1 if the text is not found.
+
+4.Searching for a String in a String
+The search() method searches a string for a specified value and returns the position of the match:
+Example
+var str = "Please locate where 'locate' occurs!";
+var pos = str.search("locate");
+
+5.Extracting String Parts
+There are 3 methods for extracting a part of a string:
+slice(start, end)
+substring(start, end)
+substr(start, length)
+The slice() Method
+
+6.slice() extracts a part of a string and returns the extracted part in a new string.
+The method takes 2 parameters: the start position, and the end position (end not included).
+This example slices out a portion of a string from position 7 to position 12 (13-1):
+Example
+var str = "Apple, Banana, Kiwi";
+var res = str.slice(7, 13);
+The result of res will be:
+
+7.The substring() Method
+substring() is similar to slice().
+The difference is that substring() cannot accept negative indexes.
+Example
+var str = "Apple, Banana, Kiwi";
+var res = str.substring(7, 13);
+The result of res will be:
+
+8.To replace case insensitive, use a regular expression with an /i flag (insensitive):
+Example
+str = "Please visit Microsoft!";
+var n = str.replace(/MICROSOFT/i, "W3Schools");
+
+9.Converting to Upper and Lower Case
+A string is converted to upper case with toUpperCase():
+Example
+var text1 = "Hello World!";       // String
+var text2 = text1.toUpperCase();  // text2 is text1 converted to upper
+A string is converted to lower case with toLowerCase():
+Example
+var text1 = "Hello World!";       // String
+var text2 = text1.toLowerCase();  // text2 is text1 converted to lower
+The concat() Method
+concat() joins two or more strings:
+
+10.String.trim()
+The trim() method removes whitespace from both sides of a string:
+Example
+var str = "       Hello World!        ";
+alert(str.trim());
+The trim() method is not supported in Internet Explorer 8 or lower.
+
+
+B]Array
+
+concat()	Joins two or more arrays, and returns a copy of the joined arrays
+copyWithin()	Copies array elements within the array, to and from specified positions
+entries()	Returns a key/value pair Array Iteration Object
+every()	Checks if every element in an array pass a test
+fill()	Fill the elements in an array with a static value
+filter()	Creates a new array with every element in an array that pass a test
+find()	Returns the value of the first element in an array that pass a test
+findIndex()	Returns the index of the first element in an array that pass a test
+forEach()	Calls a function for each array element
+from()	Creates an array from an object
+includes()	Check if an array contains the specified element
+indexOf()	Search the array for an element and returns its position
+isArray()	Checks whether an object is an array
+join()	Joins all elements of an array into a string
+keys()	Returns a Array Iteration Object, containing the keys of the original array
+lastIndexOf()	Search the array for an element, starting at the end, and returns its position
+map()	Creates a new array with the result of calling a function for each array element
+pop()	Removes the last element of an array, and returns that element
+push()	Adds new elements to the end of an array, and returns the new length
+reduce()	Reduce the values of an array to a single value (going left-to-right)
+reduceRight()	Reduce the values of an array to a single value (going right-to-left)
+reverse()	Reverses the order of the elements in an array
+shift()	Removes the first element of an array, and returns that element
+slice()	Selects a part of an array, and returns the new array
+some()	Checks if any of the elements in an array pass a test
+sort()	Sorts the elements of an array
+splice()	Adds/Removes elements from an array
+toString()	Converts an array to a string, and returns the result
+unshift()	Adds new elements to the beginning of an array, and returns the new length
+valueOf()	Returns the primitive value of an array
